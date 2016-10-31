@@ -10,7 +10,10 @@
   "author": "Amir Raminfar <findamir@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
-    "webpack": "2.1.0-beta.25"
+    "jquery": "^3.1.1",
+    "typed.js": "^1.1.1",
+    "webpack": "^2.1.0-beta.25"
   }
 }
