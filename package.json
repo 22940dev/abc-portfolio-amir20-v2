@@ -12,8 +12,13 @@
   "devDependencies": {
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "concurrently": "^3.1.0",
     "jquery": "^3.1.1",
     "typed.js": "^1.1.1",
     "webpack": "^2.1.0-beta.25"
+  },
+  "scripts": {
+    "start": "concurrently 'webpack --progress' 'hugo server --buildDrafts'"
   }
 }

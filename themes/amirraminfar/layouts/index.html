@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ .Site.Title }}</title>
+  <script src="/js/app.bundle.js"></script>
+  {{ .Hugo.Generator }}
+</head>
+<body>
+  {{- range .Data.Pages }}
+    <a href="">{{ .Title }}</a>
+  {{- end }}
+  {{- range .Data.Pages }}
+    {{ .Render "section" }}
+  {{- end }}
+</body>
+</html>

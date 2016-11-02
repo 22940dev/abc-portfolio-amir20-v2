@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages-rsses on Amir Raminfar - Software engineer. Designer. Entrepreneur.</title>
+    <link>http://amirraminfar.com/pages/index.xml</link>
+    <description>Recent content in Pages-rsses on Amir Raminfar - Software engineer. Designer. Entrepreneur.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Oct 2016 17:19:28 -0700</lastBuildDate>
+    <atom:link href="http://amirraminfar.com/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Me</title>
+      <link>http://amirraminfar.com/pages/about-me/</link>
+      <pubDate>Sun, 30 Oct 2016 17:19:28 -0700</pubDate>
+      
+      <guid>http://amirraminfar.com/pages/about-me/</guid>
+      <description>&lt;p&gt;Fusce lacus magna, maximus nec sapien eu,
+porta efficitur neque. Aliquam erat volutpat.
+Vestibulum enim nibh, posuere eu diam nec,
+varius sagittis turpis.&lt;/p&gt;
+
+&lt;p&gt;Praesent quis sapien egestas mauris accumsan
+pulvinar. Ut mattis gravida venenatis. Vivamus
+lobortis risus id nisi rutrum, at iaculis.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
