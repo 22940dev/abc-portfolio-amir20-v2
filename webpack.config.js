@@ -41,7 +41,7 @@ module.exports = {
                 }
             }
         }),
-        new ExtractTextPlugin(__dirname + "/themes/amirraminfar/static/css/styles.css"),
+        new ExtractTextPlugin("../css/styles.css"),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
