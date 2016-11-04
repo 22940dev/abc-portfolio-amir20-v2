@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
-const path = require('path');
+const lost = require('lost');
 
 
 module.exports = {
@@ -19,29 +19,30 @@ module.exports = {
         }
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'babel'
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract({
-                loader: ['css', 'postcss']
+            use: ExtractTextPlugin.extract({
+                fallbackLoader: 'style-loader',
+                loader: [{
+                    loader: 'css-loader',
+                    options: {
+                        modules: true
+                    }
+                },{
+                    loader: 'postcss-loader',
+                    options: {
+                        plugins: lost
+                    }
+                }]
             })
         }]
     },
     plugins: [
-        new webpack.LoaderOptionsPlugin({
-            options: {
-                context: __dirname,
-                postcss: {
-                    autoprefixer: {
-                        browsers: 'last 3 versions'
-                    }
-                }
-            }
-        }),
-        new ExtractTextPlugin("../css/styles.css"),
+        new ExtractTextPlugin("../css/[name].bundle.css"),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",

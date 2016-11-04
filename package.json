@@ -18,12 +18,13 @@
     "css-loader": "^0.25.0",
     "extract-text-webpack-plugin": "^2.0.0-beta",
     "jquery": "^3.1.1",
+    "lost": "^7.1.0",
     "postcss-loader": "^1.1.0",
     "style-loader": "^0.13.1",
     "typed.js": "^1.1.1",
     "webpack": "^2.1.0-beta.25"
   },
   "scripts": {
-    "start": "concurrently 'webpack --progress' 'hugo server --buildDrafts'"
+    "start": "concurrently 'webpack' 'hugo server --buildDrafts'"
   }
 }

@@ -1,2 +1,2 @@
-import "typed.js/main.css";
+import "../css/app.css";
 import "typed.js/js/typed";
