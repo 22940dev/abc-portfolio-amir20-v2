@@ -1,4 +1,8 @@
-var webpack = require("webpack");
+const webpack = require("webpack");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const path = require('path');
+
 
 module.exports = {
     context: __dirname + "/themes/amirraminfar",
@@ -11,8 +15,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            jquery: "jquery/src/jquery",
-            "typed.js": "typed.js/js/typed",
+            jquery: "jquery/src/jquery"
         }
     },
     module: {
@@ -20,9 +23,25 @@ module.exports = {
             test: /\.js$/,
             exclude: /node_modules/,
             loader: 'babel'
+        }, {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract({
+                loader: ['css', 'postcss']
+            })
         }]
     },
     plugins: [
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                context: __dirname,
+                postcss: {
+                    autoprefixer: {
+                        browsers: 'last 3 versions'
+                    }
+                }
+            }
+        }),
+        new ExtractTextPlugin(__dirname + "/themes/amirraminfar/static/css/styles.css"),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
