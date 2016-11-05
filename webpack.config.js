@@ -1,8 +1,9 @@
 const webpack = require("webpack");
+const path = require("path");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
-const lost = require('lost');
+
+
 
 
 module.exports = {
@@ -51,8 +52,11 @@ module.exports = {
         }),
         new LoaderOptionsPlugin({
             options: {
-                postcss: function () {
-                    return [autoprefixer, lost];
+                postcss: function (webpack) {
+                    return [
+                        require('lost'),
+                        require("postcss-cssnext")()
+                    ];
                 }
             }
         })
