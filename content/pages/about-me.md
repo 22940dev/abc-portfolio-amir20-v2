@@ -1,7 +1,7 @@
 +++
 title = "About Me"
-draft = true
-date = "2016-10-30T17:19:28-07:00"
+draft = false
+date = "2016-11-05T09:59:55-07:00"
 weight = 1
 +++
 

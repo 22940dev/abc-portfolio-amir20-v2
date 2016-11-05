@@ -30,6 +30,7 @@
     "webpack": "^2.1.0-beta.25"
   },
   "scripts": {
-    "start": "concurrently 'webpack --watch' 'hugo server --buildDrafts'"
+    "start": "concurrently 'webpack --watch' 'hugo server --buildDrafts'",
+    "distribute": "webpack -p --progress && hugo"
   }
 }
