@@ -10,8 +10,8 @@
   {{ .Hugo.Generator }}
 </head>
 <body>
-  {{- range .Data.Pages }}
-    {{ .Render "section" }}
-  {{- end }}
+{{- range .Data.Pages }}
+  {{ .Render "front" }}
+{{- end }}
 </body>
 </html>

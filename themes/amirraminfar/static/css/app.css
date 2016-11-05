@@ -1,5 +1,18 @@
 @import "~normalize.css";
 
-div {
-  lost-column: 1/3;
+@lost flexbox flex;
+
+body {
+    font-family: "Roboto";
+    color: color(black lightness(20%));
+}
+
+h1 {
+    font-weight: 300;
+}
+
+section {
+    lost-center: 980px;
+    min-height: 100vh;
+    align-content: flex-start;
 }

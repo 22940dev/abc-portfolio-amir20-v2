@@ -21,6 +21,7 @@
     "lost": "^7.1.0",
     "normalize.css": "^5.0.0",
     "postcss-cssnext": "^2.8.0",
+    "postcss-font-magician": "^1.5.0",
     "postcss-import": "^8.1.3",
     "postcss-loader": "^1.1.0",
     "precss": "^1.4.0",
@@ -29,6 +30,6 @@
     "webpack": "^2.1.0-beta.25"
   },
   "scripts": {
-    "start": "concurrently 'webpack' 'hugo server --buildDrafts'"
+    "start": "concurrently 'webpack --watch' 'hugo server --buildDrafts'"
   }
 }

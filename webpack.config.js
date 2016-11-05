@@ -55,7 +55,8 @@ module.exports = {
                 postcss: function (webpack) {
                     return [
                         require('lost'),
-                        require("postcss-cssnext")()
+                        require("postcss-cssnext")(),
+                        require('postcss-font-magician')()
                     ];
                 }
             }
