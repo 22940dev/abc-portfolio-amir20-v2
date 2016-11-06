@@ -1,11 +1,17 @@
 @import "~normalize.css";
+@import "./header.css"
 
 @lost flexbox flex;
 
 body {
     font-family: "Roboto";
+    background: #f4f4f4;
     color: color(black lightness(20%));
+    padding-top: 3.5em;
+    font-size: 100%;
 }
+
+
 
 h1 {
     font-weight: 300;

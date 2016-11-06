@@ -1,0 +1,41 @@
+header {
+    letter-spacing: .25em;
+    font-family: "Raleway";
+    background: white;
+    height: 3.5em;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid 1px rgba(160,160,160,.3);
+    lost-align: horizontal flex;
+    font-size: 0.7em;
+    font-weight: 400;
+
+    & h1 {
+        lost-column: 2/12;
+        font-size: inherit;
+        margin: 0;
+        font-weight: 800;
+        padding-left: 1.5em;
+
+        & a {
+            font-weight: inherit;
+        }
+    }
+
+    & nav {
+        lost-column: 10/12;
+    }
+
+    & a {
+        color: inherit;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            color: #2ebaae;
+        }
+    }
+}

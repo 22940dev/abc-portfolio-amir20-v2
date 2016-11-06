@@ -1,9 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
-
-
 
 
 module.exports = {
@@ -21,27 +18,21 @@ module.exports = {
         }
     },
     module: {
-        rules: [{
+        loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            use: ['babel-loader']
+            loader: 'babel-loader'
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract({
-                fallbackLoader: 'style-loader',
-                loader: [
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader'
-                    }
-                ]
-            })
+            loader: ExtractTextPlugin.extract('style-loader', ['css-loader?importLoaders=1', 'postcss-loader'])
         }]
+    },
+    postcss: function(webpack) {
+        return [
+            require("postcss-cssnext")(),
+            require('lost'),
+            require('postcss-font-magician')()
+        ]
     },
     plugins: [
         new ExtractTextPlugin("../css/[name].bundle.css"),
@@ -50,16 +41,5 @@ module.exports = {
             jQuery: "jquery",
             'window.jQuery': 'jquery'
         }),
-        new LoaderOptionsPlugin({
-            options: {
-                postcss: function (webpack) {
-                    return [
-                        require('lost'),
-                        require("postcss-cssnext")(),
-                        require('postcss-font-magician')()
-                    ];
-                }
-            }
-        })
     ]
 };
