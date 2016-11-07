@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
 module.exports = {
     context: __dirname + "/themes/amirraminfar",
@@ -9,8 +9,8 @@ module.exports = {
         app: "./static/js/app.js"
     },
     output: {
-        path: __dirname + "/themes/amirraminfar/static/js/",
-        filename: "[name].bundle.js",
+        path: __dirname + "/themes/amirraminfar/static/",
+        filename: "js/[name].bundle.js",
     },
     resolve: {
         alias: {
@@ -18,28 +18,41 @@ module.exports = {
         }
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader'
+            use: ['babel-loader']
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract('style-loader', ['css-loader?importLoaders=1', 'postcss-loader'])
+            loader: ExtractTextPlugin.extract({
+                fallbackLoader: 'style-loader',
+                loader: [
+                     {
+                         loader: 'css-loader',
+                         query: { importLoaders: 1},
+                     },
+                     {
+                         loader: 'postcss-loader',
+                     }
+                 ]
+            })
         }]
     },
-    postcss: function(webpack) {
-        return [
-            require("postcss-cssnext")(),
-            require('lost'),
-            require('postcss-font-magician')()
-        ]
-    },
     plugins: [
-        new ExtractTextPlugin("../css/[name].bundle.css"),
+        new ExtractTextPlugin("css/[name].bundle.css"),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
             'window.jQuery': 'jquery'
+        }),
+        new LoaderOptionsPlugin({
+            options: {
+                postcss: [
+                    require('lost'),
+                    require("postcss-cssnext")(),
+                    require('postcss-font-magician')()
+                ]
+            }
         }),
     ]
 };
