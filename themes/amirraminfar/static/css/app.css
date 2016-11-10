@@ -1,7 +1,7 @@
 @import "~normalize.css";
-@import "./header.css";
+@import "header.css";
+@import "font-page.css";
 
-@lost flexbox flex;
 
 body {
     font-family: "Roboto";
@@ -15,8 +15,3 @@ h1 {
     font-weight: 300;
 }
 
-.article--front-page {
-    lost-center: 980px;
-    min-height: 100vh;
-    flex-direction: column;
-}

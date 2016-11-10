@@ -10,11 +10,11 @@
   {{ .Hugo.Generator }}
 </head>
 <body>
-<header>
+<header id="header">
   <h2>
     <a href="/">Amir Raminfar</a>
   </h2>
-  <nav>
+  <nav id="main-nav">
     <ul>
         <li>
             <a href="test">About me</a>
@@ -25,6 +25,7 @@
     </ul>
   </nav>
 </header>
+
 {{- range .Data.Pages }}
   {{ .Render "front" }}
 {{- end }}
