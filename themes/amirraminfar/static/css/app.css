@@ -2,16 +2,28 @@
 @import "header.css";
 @import "font-page.css";
 
-
 body {
-    font-family: "Roboto";
     background: #f4f4f4;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: color(black lightness(20%));
     margin-top: 3.5em;
     font-size: 100%;
+    line-height: 1.75em;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+    font-family: Raleway, Helvetica, sans-serif;
+    letter-spacing: .25em;
+    text-transform: uppercase;
 }
 
 h1 {
     font-weight: 300;
+    color: #3c3b3b;
 }
 
+p {
+    margin: 0 0 1em;
+    opacity: 0.88;
+}
