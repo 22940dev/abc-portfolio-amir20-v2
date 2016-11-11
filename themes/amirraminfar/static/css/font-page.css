@@ -1,20 +1,33 @@
+:root {
+    --border-style: solid 1px rgba(160, 160, 160, .3);
+}
+
 #wrapper {
     padding: 4em;
     lost-flex-container: row;
 }
 
-#side-column {
+#side-bar {
     lost-column: 1/3 flex;
 }
 
 #main {
-    lost-colum: 2/3 flex;
+    lost-column: 2/3 flex;
 }
 
 .article--front-page {
-    lost-center: 980px;
-    min-height: 100vh;
-    flex-direction: column;
+    min-height: 80vh;
+    background: #fff;
+    border: var(--border-style);
+    padding: 3em 3em 1em;
+    margin: 0 0 2em;
+
+    & > h1 {
+        border-bottom: var(--border-style);
+        padding-bottom: .7em;
+        font-weight: 900;
+        font-size: 1.5em;
+    }
 }
 
 

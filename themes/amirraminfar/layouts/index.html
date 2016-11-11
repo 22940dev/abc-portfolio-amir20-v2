@@ -25,9 +25,15 @@
     </ul>
   </nav>
 </header>
-
-{{- range .Data.Pages }}
-  {{ .Render "front" }}
-{{- end }}
+<div id="wrapper">
+    <section id="side-bar">
+        this is sidebar
+    </section>
+    <main id="main">
+        {{- range .Data.Pages }}
+        {{ .Render "front" }}
+        {{- end }}
+    </main>
+</div>
 </body>
 </html>
