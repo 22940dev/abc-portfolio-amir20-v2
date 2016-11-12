@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ .Site.Title }}</title>
-  <script src="/js/app.bundle.js"></script>
-  <link rel="stylesheet" href="/css/app.bundle.css">
-  {{ .Hugo.Generator }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ .Site.Title }}</title>
+
+    <link rel="stylesheet" href="/css/app.bundle.css">
+    {{ .Hugo.Generator }}
 </head>
 <body>
 <header id="header">
-  <h2>
-    <a href="/">Amir Raminfar</a>
-  </h2>
-  <nav id="main-nav">
-    <ul>
-        <li>
-            <a href="test">About me</a>
-        </li>
-        <li>
-            <a href="test">Projects</a>
-        </li>
-    </ul>
-  </nav>
+    <h2>
+        <a href="/">Amir Raminfar</a>
+    </h2>
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="test">About me</a>
+            </li>
+            <li>
+                <a href="test">Projects</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <div id="wrapper">
     <section id="sidebar">
         <section id="intro">
             <a href="/" class="logo">
-                <img src="/img/me.jpg" alt="Picture of Amir" />
+                <img src="/img/me.jpg" alt="Picture of Amir"/>
             </a>
             <header>
                 <h2>Amir Raminfar</h2>
@@ -47,5 +47,7 @@
         {{- end }}
     </main>
 </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="/js/app.bundle.js"></script>
 </body>
 </html>

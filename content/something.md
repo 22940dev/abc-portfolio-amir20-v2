@@ -7,4 +7,4 @@ draft = false
 
 # Something else 
 
-This is a test
+<script type="text/javascript" src="https://asciinema.org/a/92489.js" id="asciicast-92489" async></script>
