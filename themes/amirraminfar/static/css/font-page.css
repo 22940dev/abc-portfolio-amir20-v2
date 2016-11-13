@@ -4,8 +4,8 @@
 
 #wrapper {
     padding: 4em;
-
     lost-center: 90em flex;
+
 }
 
 #sidebar {
@@ -14,21 +14,6 @@
 
 #main {
     lost-column: 2/3 flex;
-}
-
-.article--front-page {
-    min-height: 80vh;
-    background: #fff;
-    border: var(--border-style);
-    padding: 3em 3em 1em;
-    margin: 0 0 2em;
-
-    & > h1 {
-        border-bottom: var(--border-style);
-        padding-bottom: .7em;
-        font-weight: 900;
-        font-size: 1.5em;
-    }
 }
 
 #intro {
@@ -77,4 +62,26 @@
     }
 }
 
+#footer {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    color: #aaa;
+}
 
+.article--front-page {
+    min-height: 80vh;
+    background: #fff;
+    border: var(--border-style);
+    padding: 3em 3em 1em;
+    margin: 0 0 2em;
+
+    & > h1 {
+        border-bottom: var(--border-style);
+        padding-bottom: .7em;
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+}
