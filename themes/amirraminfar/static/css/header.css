@@ -52,10 +52,11 @@
         }
     }
 
-    & a {
+    & :any-link {
         color: inherit;
         text-transform: uppercase;
         text-decoration: none;
+        border-bottom: none;
 
         &:hover {
             color: #2ebaae;
