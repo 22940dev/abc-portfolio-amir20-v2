@@ -26,33 +26,33 @@
     </nav>
 </header>
 <div id="wrapper">
-    <section id="sidebar">
-        <section id="intro">
-            <a href="/" class="logo">
-                <img src="/img/me.jpg" alt="Picture of Amir"/>
-            </a>
-            <header>
-                <h2>Amir Raminfar</h2>
-                <ul>
-                    <li>Software engineer.</li>
-                    <li>Designer.</li>
-                    <li>Entrepreneur.</li>
-                </ul>
-            </header>
-        </section>
-        <footer id="footer">
-            <p class="copyright">
-                © Hugo Future Imperfect. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.
-                Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by
-                <a href="//gohugo.io" target="_blank">Hugo</a>
-            </p>
-        </footer>
-    </section>
     <main id="main">
         {{- range .Data.Pages }}
         {{ .Render "front" }}
         {{- end }}
     </main>
+    <section id="intro">
+        <a href="/" class="logo">
+            <img src="/img/me.jpg" alt="Picture of Amir"/>
+        </a>
+        <header>
+            <h2>Amir Raminfar</h2>
+            <ul>
+                <li>Software engineer.</li>
+                <li>Designer.</li>
+                <li>Entrepreneur.</li>
+            </ul>
+        </header>
+    </section>
+    <footer id="footer">
+        <p class="copyright">
+            © Hugo Future Imperfect. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.
+            Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by
+            <a href="//gohugo.io" target="_blank">Hugo</a>
+        </p>
+    </footer>
+
+
 </div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
 <script src="/js/app.bundle.js"></script>

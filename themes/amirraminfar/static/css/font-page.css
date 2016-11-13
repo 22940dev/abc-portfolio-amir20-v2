@@ -4,19 +4,24 @@
 
 #wrapper {
     padding: 4em;
-    lost-center: 90em flex;
-
+    lost-center: 90em;
 }
 
 #sidebar {
-    lost-column: 1/3 flex;
+    width: calc(99.9% * 1 / 3 - 10px);
+    float: left;
 }
 
 #main {
-    lost-column: 2/3 flex;
+    width: calc(99.9% * 2 / 3 - 10px);
+
+    float: right;
 }
 
 #intro {
+    width: calc(99.9% * 1 / 3 - 10px);
+    float: left;
+
     & .logo {
         border-bottom: 0;
         display: inline-block;
@@ -63,6 +68,7 @@
 }
 
 #footer {
+    lost-column: 1/3;
     font-family: Raleway, Helvetica, sans-serif;
     font-weight: 400;
     letter-spacing: .25em;
