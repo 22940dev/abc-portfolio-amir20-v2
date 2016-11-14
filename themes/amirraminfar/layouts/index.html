@@ -26,11 +26,6 @@
     </nav>
 </header>
 <div id="wrapper">
-    <main id="main">
-        {{- range .Data.Pages }}
-        {{ .Render "front" }}
-        {{- end }}
-    </main>
     <section id="intro">
         <a href="/" class="logo">
             <img src="/img/me.jpg" alt="Picture of Amir"/>
@@ -44,6 +39,11 @@
             </ul>
         </header>
     </section>
+    <main id="main">
+        {{- range .Data.Pages }}
+        {{ .Render "front" }}
+        {{- end }}
+    </main>
     <footer id="footer">
         <p class="copyright">
             © Hugo Future Imperfect. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.

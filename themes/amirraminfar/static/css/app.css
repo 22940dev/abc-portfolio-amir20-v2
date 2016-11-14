@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "~highlight.js/styles/monokai-sublime.css";
+@import "layout.css";
 @import "header.css";
 @import "font-page.css";
 
