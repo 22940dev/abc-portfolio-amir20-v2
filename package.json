@@ -32,6 +32,6 @@
   },
   "scripts": {
     "start": "concurrently 'webpack --watch' 'hugo server --buildDrafts'",
-    "distribute": "webpack -p --progress && hugo"
+    "build": "webpack -p --progress && hugo"
   }
 }
