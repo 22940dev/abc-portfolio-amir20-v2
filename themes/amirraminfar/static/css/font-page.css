@@ -58,9 +58,14 @@
 
     & > h1 {
         border-bottom: var(--border-style);
-        padding-bottom: .7em;
+        padding-bottom: 2em;
+        padding-left: 2em;
         font-weight: 900;
         font-size: 1.5em;
+        width: calc(100% + 2em);
+        left: -2em;
+        position: relative;
+        margin-bottom: 1.5em;
     }
 }
 
@@ -74,5 +79,13 @@
     .article--front-page {
         padding-left: 1em;
         padding-right: 1em;
+        padding-top: 1em;
+
+        & > h1 {
+            padding-bottom: 1em;
+            padding-left: 2em;
+            font-size: 1.25em;
+            margin-bottom: 0.5em;
+        }
     }
 }
