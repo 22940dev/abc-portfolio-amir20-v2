@@ -69,6 +69,13 @@
     }
 }
 
+@media screen and (width <= 1024px) {
+    .article--front-page {
+        border-left: none;
+        border-right: none;
+    }
+}
+
 @media screen and (width <= 780px) {
     #intro {
         & h2 {
