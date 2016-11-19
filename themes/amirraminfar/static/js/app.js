@@ -1,3 +1,4 @@
 import "../css/app.css";
 import "typed.js/js/typed";
-hljs.initHighlightingOnLoad();
+
+$('#typed').typed({strings: [$('#typed').text()], showCursor: false});
