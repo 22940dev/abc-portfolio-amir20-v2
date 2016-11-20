@@ -104,6 +104,7 @@
     animation: blink 1s infinite;
     font-weight: normal;
     content: '|';
+    color: color(#2ebaae);
 }
 @keyframes blink {
     0% {

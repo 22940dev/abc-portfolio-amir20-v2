@@ -1,4 +1,6 @@
 import "../css/app.css";
 import "typed.js/js/typed";
 
-$('#typed').typed({strings: [$('#typed').text()], showCursor: false});
+const target = $('#typed');
+const typerString = target.text();
+target.text('').typed({strings: [typerString], showCursor: false, typeSpeed: 20, startDelay: 700});
