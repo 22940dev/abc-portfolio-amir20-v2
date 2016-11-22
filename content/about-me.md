@@ -5,10 +5,11 @@ date = "2016-11-05T09:59:55-07:00"
 weight = 1
 +++
 
-# Hey, there!
+# Who Am I?
 
-I am a passionate software engineer who loves learning new things. I live in city of San Francisco and enjoy the outdoors and boxing! I am currently [Director of Engineering](https://www.linkedin.com/in/amirraminfar) for the Outbound and [Engineers Efficiency](https://opower.com/products/energy-efficiency/) program at [Opower](https://opower.com/). Recently, I had a chance to pilot a [self-selection](http://nomad8.com/opower-case-study-self%C2%AD-selection-pilot/) event at Opower.  While I work on my leadership skills at work, I am a little nerd at home. I keep my technical skills up to date by protoyping services in Docker and front-end frameworks ReactJS and Redux.
 
-On my spare time, I work on [phantomjs-node](https://github.com/amir20/phantomjs-node) which is an open source project that has gotten a lot of traction recently.
+I am a software engineer, people manager and technology visionary. Here is a brief bio about me. I am currently at [Quid](https://quid.com/) as [Director of Engineering](https://www.linkedin.com/in/amirraminfar) for the web team. Quid web transforms million of data points to beautiful visualizations of information and data powered by big-data analytics.  
 
-I have worked at larger companies like AOL where I was senior software engineer on [AOL.com](http://aol.com/). Most recently, I was a founder at [Tilofy](http://www.tilofy.com/) where we indexed millions of documents to power a real-time search engine.
+Previously, I worked at [Opower](https://opower.com/) leading the Outbound & [Engineers Efficiency](https://opower.com/products/energy-efficiency/) team. Opower IPO’ed in [2014](http://www.nasdaq.com/markets/ipos/company/opower-inc-756492-74761) and acquired by Oracle in [2016](https://www.oracle.com/corporate/pressrelease/oracle-buys-opower-050216.html). For a short time, I left Opower to start my own company, [Tilofy](http://www.tilofy.com/), with friends. Tilofy is a real-time search engine which indexes millions of social media content to power nearby insights.
+
+You can find me active on Github working on [phantomjs-node](https://github.com/amir20/phantomjs-node) or my [Stackoverflow](http://stackoverflow.com/users/419075/amir-raminfar) account which I am often active. 

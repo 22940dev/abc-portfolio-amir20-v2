@@ -26,7 +26,7 @@
     </nav>
 </header>
 <div id="wrapper">
-    <section id="intro">
+    <section id="intro" class="sidebar">
         <a href="/" class="logo">
             <img src="/img/me.jpg" alt="Picture of Amir"/>
         </a>
@@ -44,14 +44,26 @@
         {{ .Render "front" }}
         {{- end }}
     </main>
-    <footer id="footer">
-        <p class="copyright">
+    <section id="icons" class="sidebar">
+        <ul>
+            <li>
+                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </section>
+    <footer class="sidebar">
+        <p id="footer" class="copyright">
             © Hugo Future Imperfect. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>.
             Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by
             <a href="//gohugo.io" target="_blank">Hugo</a>
         </p>
     </footer>
-
 
 </div>
 <script src="/js/app.bundle.js"></script>

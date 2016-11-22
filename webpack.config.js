@@ -27,15 +27,18 @@ module.exports = {
             loader: ExtractTextPlugin.extract({
                 fallbackLoader: 'style-loader',
                 loader: [
-                     {
-                         loader: 'css-loader',
-                         query: { importLoaders: 1},
-                     },
-                     {
-                         loader: 'postcss-loader',
-                     }
-                 ]
+                    {
+                        loader: 'css-loader',
+                        query: {importLoaders: 1},
+                    },
+                    {
+                        loader: 'postcss-loader',
+                    }
+                ]
             })
+        }, {
+            test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            loader: 'url'
         }]
     },
     plugins: [

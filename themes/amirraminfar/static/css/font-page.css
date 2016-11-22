@@ -97,8 +97,6 @@
     }
 }
 
-
-
 #typed:after {
     opacity: 1;
     animation: blink 1s infinite;
@@ -106,6 +104,7 @@
     content: '|';
     color: color(#2ebaae);
 }
+
 @keyframes blink {
     0% {
         opacity: 1;
@@ -115,5 +114,29 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+#footer {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    color: #aaa;
+    line-height: 1.8em;
+    margin-top: 2em;
+}
+
+#icons {
+    color: #aaa;
+    & ul{
+        margin: 0;
+        padding: 0;
+    }
+    & li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 1em 0 0;
     }
 }

@@ -1,5 +1,6 @@
 @import "~normalize.css";
 @import "~highlight.js/styles/monokai-sublime.css";
+@import "font-awesome.css";
 @import "layout.css";
 @import "header.css";
 @import "font-page.css";
@@ -30,8 +31,11 @@ p {
     opacity: 0.88;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 :any-link {
-    border-bottom: dotted 1px rgba(160, 160, 160, .65);
     color: inherit;
     text-decoration: none;
 
@@ -41,6 +45,6 @@ p {
     }
 
     @nest p & {
-        border-bottom-width: 2px;
+        border-bottom: 2px dotted rgba(160, 160, 160, .65);
     }
 }
