@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 {{ partial "head" . }}
-<body>
+<body class="phantom">
 {{ partial "header" . }}
 <div id="wrapper">
     {{ partial "about-sidebar" . }}
     <main id="main">
-        {{- range where .Data.Pages "Type" "front"  }}
-        {{ .Render "front" }}
-        {{- end }}
+        {{ .Content }}
     </main>
     {{ partial "links-sidebar" . }}
     {{ partial "footer" . }}
-
 </div>
 <script src="/js/app.bundle.js"></script>
 </body>

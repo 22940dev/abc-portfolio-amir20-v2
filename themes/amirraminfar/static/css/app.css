@@ -3,7 +3,9 @@
 @import "font-awesome.css";
 @import "layout.css";
 @import "header.css";
+@import "sidebar.css";
 @import "font-page.css";
+@import "phantom.css";
 
 body {
     background: #f4f4f4;
