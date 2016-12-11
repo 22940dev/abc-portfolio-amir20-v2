@@ -2,7 +2,7 @@
     --border-style: solid 1px rgba(160, 160, 160, .3);
 }
 
-.article--front-page {
+.article {
     min-height: 80vh;
     background: #fff;
     border: var(--border-style);
@@ -23,14 +23,14 @@
 }
 
 @media screen and (width <= 1024px) {
-    .article--front-page {
+    .article {
         border-left: none;
         border-right: none;
     }
 }
 
 @media screen and (width <= 780px) {
-    .article--front-page {
+    .article {
         padding-left: 1em;
         padding-right: 1em;
         padding-top: 1em;

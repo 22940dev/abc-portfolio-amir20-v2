@@ -34,5 +34,8 @@
   "scripts": {
     "start": "concurrently 'webpack --watch' 'hugo server --buildDrafts'",
     "build": "webpack -p --progress && hugo"
+  },
+  "dependencies": {
+    "turbolinks": "^5.0.0"
   }
 }
