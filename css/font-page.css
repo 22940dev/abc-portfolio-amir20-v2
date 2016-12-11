@@ -1,0 +1,45 @@
+:root {
+    --border-style: solid 1px rgba(160, 160, 160, .3);
+}
+
+.article {
+    min-height: 80vh;
+    background: #fff;
+    border: var(--border-style);
+    padding: 3em 3em 1em;
+    margin: 0 0 2em;
+
+    & > h1 {
+        border-bottom: var(--border-style);
+        padding-bottom: 2em;
+        padding-left: 2em;
+        font-weight: 900;
+        font-size: 1.5em;
+        width: calc(100% + 2em);
+        left: -2em;
+        position: relative;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media screen and (width <= 1024px) {
+    .article {
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (width <= 780px) {
+    .article {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+
+        & > h1 {
+            padding-bottom: 1em;
+            padding-left: 2em;
+            font-size: 1.25em;
+            margin-bottom: 0.5em;
+        }
+    }
+}

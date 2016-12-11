@@ -10,7 +10,7 @@
     <meta name="generator" content="Hugo 0.17" />
 </head>
 
-<body>
+<body class="phantom">
 <header id="header">
     <h2>
         <a href="/">Amir Raminfar</a>
@@ -43,30 +43,57 @@
 </section>
 
     <main id="main">
-        <article class="article">
-    
+        
 
-<h1 id="who-am-i">Who Am I?</h1>
+<h1 id="phantomjs-for-nodejs">PhantomJS for NodeJS</h1>
 
-<p>I am a software engineer, people manager and technology visionary. Here is
-a brief bio about me. I am currently at <a href="https://quid.com/">Quid</a> as
-<a href="https://www.linkedin.com/in/amirraminfar">Director of Engineering</a> for
-the web team. Quid web transforms million of data points to beautiful
-visualizations of information and data powered by big-data analytics.</p>
+<p><a class="button big" href="https://github.com/amir20/phantomjs-node">Get Started</a>
+<iframe id="github" src="https://ghbtns.com/github-btn.html?user=amir20&repo=phantomjs-node&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe></p>
 
-<p>Previously, I worked at <a href="https://opower.com/">Opower</a> leading the Outbound
-&amp; <a href="https://opower.com/products/energy-efficiency/">Engineers Efficiency</a>
-team. Opower IPO’ed in <a href="http://www.nasdaq.com/markets/ipos/company/opower-inc-756492-74761">2014</a>
-and acquired by Oracle in <a href="https://www.oracle.com/corporate/pressrelease/oracle-buys-opower-050216.html">2016</a>.
-For a short time, I left Opower to start my own company, <a href="http://www.tilofy.com/">Tilofy</a>,
-with friends. Tilofy is a real-time search engine which
-indexes millions of social media content to power nearby insights.</p>
+<h2 id="what-is-phantomjs-for-nodejs">What is PhantomJS for NodeJS?</h2>
 
-<p>You can find me active on Github working on <a href="https://github.com/amir20/phantomjs-node">phantomjs-node</a>
-or my <a href="http://stackoverflow.com/users/419075/amir-raminfar">Stackoverflow</a>
-account which I am often active.</p>
+<p><a href="http://phantomjs.org/">PhantomJS</a> is a headless WebKit scriptable with a JavaScript API.
+The native API is not accessible in NodeJS. This module allows NodeJS to interface with PhantomJS via
+an external process. It spawns PhantomJS processes automatically and exposes a really simple API
+to the NodeJS developer.</p>
 
-</article>
+<h2 id="easy-installation">Easy Installation.</h2>
+
+<p>Installing PhantomJS-Node is very easy. You can install it like any other NPM module.
+Phantom automatically installs the right version of PhantomJS so that you don&rsquo;t have to. If
+the right version is installed, then it does nothing. You can install Phantom with</p>
+
+<pre><code>npm i phantom --save
+</code></pre>
+
+<p>Or use Yarn</p>
+
+<pre><code>yarn add phantom
+</code></pre>
+
+<p>For older versions of NodeJS, checkout the <a href="https://github.com/amir20/phantomjs-node#installation">README</a>.</p>
+
+<h2 id="very-easy">Very Easy.</h2>
+
+<p>It is very easy to start using PhantomJS in NodeJS. Here is a example how to read the content of a website.</p>
+
+<pre><code class="language-js">const phantom = require('phantom');
+
+(async function() {
+    const instance = await phantom.create();
+    const page = await instance.createPage();
+    const status = await page.open('https://stackoverflow.com/');
+    console.log(status);
+    const content = await page.property('content');
+    console.log(content);
+    await instance.exit();
+}());
+</code></pre>
+
+<h2 id="see-it-in-action">See it in action</h2>
+
+<p>Below is a recording that show how to use Phantom using Node 7+.
+<script type="text/javascript" src="https://asciinema.org/a/92551.js" id="asciicast-92551" async></script></p>
 
     </main>
     <section id="icons" class="sidebar">
@@ -93,8 +120,9 @@ account which I am often active.</p>
     </p>
 </footer>
 
-
 </div>
 <script src="/js/app.bundle.js"></script>
+<script src="//cdn.jsdelivr.net/highlight.js/9.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
