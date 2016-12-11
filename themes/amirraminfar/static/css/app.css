@@ -6,6 +6,7 @@
 @import "sidebar.css";
 @import "font-page.css";
 @import "phantom.css";
+@import "button.css";
 
 body {
     background: #f4f4f4;

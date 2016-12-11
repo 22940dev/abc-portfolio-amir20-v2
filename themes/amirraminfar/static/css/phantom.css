@@ -13,6 +13,10 @@ body.phantom {
         color: #f4f4f4;
     }
 
+    & h2{
+        margin-top: 2.3em;
+    }
+
     & #wrapper {
         padding: 3em 0 0 3em;
         max-width: none;
@@ -20,10 +24,27 @@ body.phantom {
 
     }
 
-    & main {
+    & #main {
         top: -3em;
         position: relative;
-        background: color(#2188b6 blackness(30%))
+        background: color(#2188b6 blackness(30%));
+        padding: 5em 3em 3em;
     }
 
+    & .button{
+        color: #f0f0f0;
+        box-shadow: inset 0 0 0 1px #f0f0f0;
+
+        &:hover {
+            box-shadow: inset 0 0 0 1px #fff;
+            background: #fff;
+            color: #3b3e43;
+        }
+    }
+
+}
+
+#github{
+    margin-left: 3em;
+    vertical-align: middle;
 }

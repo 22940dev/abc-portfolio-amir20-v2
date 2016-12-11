@@ -8,5 +8,5 @@ type = "front"
 
 # Something else
 
-<script type="text/javascript" src="https://asciinema.org/a/92551.js" id="asciicast-92551" async></script>
+
 
