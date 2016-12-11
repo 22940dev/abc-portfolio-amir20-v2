@@ -1,0 +1,65 @@
+:root {
+    --border-style: solid 1px rgba(160, 160, 160, .3);
+}
+
+#header {
+    letter-spacing: .15em;
+    font-family: "Raleway";
+    background: white;
+    height: 3.5em;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: var(--border-style);
+    lost-align: horizontal flex;
+    font-weight: 400;
+    z-index: 2;
+
+    & > * {
+        font-size: 0.7em;
+    }
+
+    & h2 {
+        margin: 0;
+        font-weight: 800;
+        padding-left: 1.5em;
+    }
+
+    & #main-nav {
+        margin-left: 1.5em;
+        padding-left: 1.5em;
+        border-left: var(--border-style);
+
+        & > ul {
+            margin: 0;
+            padding: 0;
+
+            & > li {
+                margin: 0 0 0 1em;
+                padding: 0 0 0 1em;
+                border-left: var(--border-style);
+                display: inline-block;
+                line-height: 1;
+
+                &:first-child {
+                    border-left: none;
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    & :any-link {
+        color: inherit;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: none;
+
+        &:hover {
+            color: #2ebaae;
+        }
+    }
+}
