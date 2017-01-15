@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://amirraminfar.com/</loc>
-    <lastmod>2016-12-10T12:06:26-08:00</lastmod>
+    <loc>http://amirraminfar.com/about-me/</loc>
+    <lastmod>2016-11-05T09:59:55-07:00</lastmod>
   </url>
   
   <url>
@@ -12,8 +12,15 @@
   </url>
   
   <url>
-    <loc>http://amirraminfar.com/about-me/</loc>
+    <loc>http://amirraminfar.com/</loc>
     <lastmod>2016-11-05T09:59:55-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://amirraminfar.com/phantomjs-node/</loc>
+    <lastmod>2016-12-10T12:06:26-08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     border-bottom: var(--border-style);
-    lost-align: horizontal flex;
+    lost-align: left flex;
     font-weight: 400;
     z-index: 2;
 

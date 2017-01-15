@@ -6,8 +6,38 @@
     <description>Recent content on Amir Raminfar - Software engineer. Designer. Entrepreneur.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Dec 2016 12:06:26 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Nov 2016 09:59:55 -0700</lastBuildDate>
     <atom:link href="http://amirraminfar.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Me</title>
+      <link>http://amirraminfar.com/about-me/</link>
+      <pubDate>Sat, 05 Nov 2016 09:59:55 -0700</pubDate>
+      
+      <guid>http://amirraminfar.com/about-me/</guid>
+      <description>
+
+&lt;h1 id=&#34;who-am-i&#34;&gt;Who Am I?&lt;/h1&gt;
+
+&lt;p&gt;I am a software engineer, people manager, and technology visionary.
+I am currently at &lt;a href=&#34;https://quid.com/&#34;&gt;Quid&lt;/a&gt; as
+&lt;a href=&#34;https://www.linkedin.com/in/amirraminfar&#34;&gt;Director of Engineering&lt;/a&gt; for
+the web team. Quid web transforms million of data points to beautiful
+visualizations of information and data powered by big-data analytics.&lt;/p&gt;
+
+&lt;p&gt;Previously, I worked at &lt;a href=&#34;https://opower.com/&#34;&gt;Opower&lt;/a&gt; leading the Outbound
+&amp;amp; &lt;a href=&#34;https://opower.com/products/energy-efficiency/&#34;&gt;Engineers Efficiency&lt;/a&gt;
+team. Opower IPO’ed in &lt;a href=&#34;http://www.nasdaq.com/markets/ipos/company/opower-inc-756492-74761&#34;&gt;2014&lt;/a&gt;
+and acquired by Oracle in &lt;a href=&#34;https://www.oracle.com/corporate/pressrelease/oracle-buys-opower-050216.html&#34;&gt;2016&lt;/a&gt;.
+For a short time, I left Opower to start my own company, &lt;a href=&#34;http://www.tilofy.com/&#34;&gt;Tilofy&lt;/a&gt;,
+with friends. Tilofy is a real-time search engine which
+indexes millions of social media content to power nearby insights.&lt;/p&gt;
+
+&lt;p&gt;You can find me active on Github working on &lt;a href=&#34;https://github.com/amir20/phantomjs-node&#34;&gt;phantomjs-node&lt;/a&gt;
+or my &lt;a href=&#34;http://stackoverflow.com/users/419075/amir-raminfar&#34;&gt;Stackoverflow&lt;/a&gt;
+account which I am often active.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>PhantomJS Integration for NodeJS</title>
@@ -66,36 +96,6 @@ the right version is installed, then it does nothing. You can install Phantom wi
 
 &lt;p&gt;Below is a recording that show how to use Phantom using Node 7+.
 &lt;script type=&#34;text/javascript&#34; src=&#34;https://asciinema.org/a/92551.js&#34; id=&#34;asciicast-92551&#34; async&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>http://amirraminfar.com/about-me/</link>
-      <pubDate>Sat, 05 Nov 2016 09:59:55 -0700</pubDate>
-      
-      <guid>http://amirraminfar.com/about-me/</guid>
-      <description>
-
-&lt;h1 id=&#34;who-am-i&#34;&gt;Who Am I?&lt;/h1&gt;
-
-&lt;p&gt;I am a software engineer, people manager and technology visionary. Here is
-a brief bio about me. I am currently at &lt;a href=&#34;https://quid.com/&#34;&gt;Quid&lt;/a&gt; as
-&lt;a href=&#34;https://www.linkedin.com/in/amirraminfar&#34;&gt;Director of Engineering&lt;/a&gt; for
-the web team. Quid web transforms million of data points to beautiful
-visualizations of information and data powered by big-data analytics.&lt;/p&gt;
-
-&lt;p&gt;Previously, I worked at &lt;a href=&#34;https://opower.com/&#34;&gt;Opower&lt;/a&gt; leading the Outbound
-&amp;amp; &lt;a href=&#34;https://opower.com/products/energy-efficiency/&#34;&gt;Engineers Efficiency&lt;/a&gt;
-team. Opower IPO’ed in &lt;a href=&#34;http://www.nasdaq.com/markets/ipos/company/opower-inc-756492-74761&#34;&gt;2014&lt;/a&gt;
-and acquired by Oracle in &lt;a href=&#34;https://www.oracle.com/corporate/pressrelease/oracle-buys-opower-050216.html&#34;&gt;2016&lt;/a&gt;.
-For a short time, I left Opower to start my own company, &lt;a href=&#34;http://www.tilofy.com/&#34;&gt;Tilofy&lt;/a&gt;,
-with friends. Tilofy is a real-time search engine which
-indexes millions of social media content to power nearby insights.&lt;/p&gt;
-
-&lt;p&gt;You can find me active on Github working on &lt;a href=&#34;https://github.com/amir20/phantomjs-node&#34;&gt;phantomjs-node&lt;/a&gt;
-or my &lt;a href=&#34;http://stackoverflow.com/users/419075/amir-raminfar&#34;&gt;Stackoverflow&lt;/a&gt;
-account which I am often active.&lt;/p&gt;
 </description>
     </item>
     
