@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>http://amirraminfar.com/phantomjs-node/</loc>
+    <loc>http://amirraminfar.com/phantomjs-node/index/</loc>
     <lastmod>2016-12-10T12:06:26-08:00</lastmod>
   </url>
   
@@ -18,8 +18,18 @@
   </url>
   
   <url>
+    <loc>http://amirraminfar.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://amirraminfar.com/phantomjs-node/</loc>
     <lastmod>2016-12-10T12:06:26-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://amirraminfar.com/tags/</loc>
     <priority>0</priority>
   </url>
   

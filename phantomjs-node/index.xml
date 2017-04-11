@@ -2,71 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phantomjs-nodes on Amir Raminfar - Software engineer. Designer. Entrepreneur.</title>
-    <link>http://amirraminfar.com/phantomjs-node/index.xml</link>
+    <link>http://amirraminfar.com/phantomjs-node/</link>
     <description>Recent content in Phantomjs-nodes on Amir Raminfar - Software engineer. Designer. Entrepreneur.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Dec 2016 12:06:26 -0800</lastBuildDate>
-    <atom:link href="http://amirraminfar.com/phantomjs-node/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://amirraminfar.com/phantomjs-node/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PhantomJS Integration for NodeJS</title>
-      <link>http://amirraminfar.com/phantomjs-node/</link>
+      <link>http://amirraminfar.com/phantomjs-node/index/</link>
       <pubDate>Sat, 10 Dec 2016 12:06:26 -0800</pubDate>
       
-      <guid>http://amirraminfar.com/phantomjs-node/</guid>
-      <description>
-
-&lt;h1 id=&#34;phantomjs-for-nodejs&#34;&gt;PhantomJS for NodeJS&lt;/h1&gt;
-
-&lt;p&gt;&lt;a class=&#34;button big&#34; href=&#34;https://github.com/amir20/phantomjs-node&#34;&gt;Get Started&lt;/a&gt;
-&lt;iframe id=&#34;github&#34; src=&#34;https://ghbtns.com/github-btn.html?user=amir20&amp;repo=phantomjs-node&amp;type=star&amp;count=true&amp;size=large&#34; frameborder=&#34;0&#34; scrolling=&#34;0&#34; width=&#34;160px&#34; height=&#34;30px&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;what-is-phantomjs-for-nodejs&#34;&gt;What is PhantomJS for NodeJS?&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://phantomjs.org/&#34;&gt;PhantomJS&lt;/a&gt; is a headless WebKit scriptable with a JavaScript API.
-The native API is not accessible in NodeJS. This module allows NodeJS to interface with PhantomJS via
-an external process. It spawns PhantomJS processes automatically and exposes a really simple API
-to the NodeJS developer.&lt;/p&gt;
-
-&lt;h2 id=&#34;easy-installation&#34;&gt;Easy Installation.&lt;/h2&gt;
-
-&lt;p&gt;Installing PhantomJS-Node is very easy. You can install it like any other NPM module.
-Phantom automatically installs the right version of PhantomJS so that you don&amp;rsquo;t have to. If
-the right version is installed, then it does nothing. You can install Phantom with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;npm i phantom --save
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Or use Yarn&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;yarn add phantom
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For older versions of NodeJS, checkout the &lt;a href=&#34;https://github.com/amir20/phantomjs-node#installation&#34;&gt;README&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;very-easy&#34;&gt;Very Easy.&lt;/h2&gt;
-
-&lt;p&gt;It is very easy to start using PhantomJS in NodeJS. Here is a example how to read the content of a website.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const phantom = require(&#39;phantom&#39;);
-
-(async function() {
-    const instance = await phantom.create();
-    const page = await instance.createPage();
-    const status = await page.open(&#39;https://stackoverflow.com/&#39;);
-    console.log(status);
-    const content = await page.property(&#39;content&#39;);
-    console.log(content);
-    await instance.exit();
-}());
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;see-it-in-action&#34;&gt;See it in action&lt;/h2&gt;
-
-&lt;p&gt;Below is a recording that show how to use Phantom using Node 7+.
-&lt;script type=&#34;text/javascript&#34; src=&#34;https://asciinema.org/a/92551.js&#34; id=&#34;asciicast-92551&#34; async&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
+      <guid>http://amirraminfar.com/phantomjs-node/index/</guid>
+      <description>PhantomJS for NodeJS Get Started 
+What is PhantomJS for NodeJS? PhantomJS is a headless WebKit scriptable with a JavaScript API. The native API is not accessible in NodeJS. This module allows NodeJS to interface with PhantomJS via an external process. It spawns PhantomJS processes automatically and exposes a really simple API to the NodeJS developer.
+Easy Installation. Installing PhantomJS-Node is very easy. You can install it like any other NPM module.</description>
     </item>
     
   </channel>
