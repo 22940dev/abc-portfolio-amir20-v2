@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://amirraminfar.com/about-me/</loc>
@@ -7,7 +8,7 @@
   </url>
   
   <url>
-    <loc>http://amirraminfar.com/phantomjs-node/index/</loc>
+    <loc>http://amirraminfar.com/phantomjs-node/</loc>
     <lastmod>2016-12-10T12:06:26-08:00</lastmod>
   </url>
   

@@ -23,10 +23,10 @@ Previously, I worked at Opower leading the Outbound &amp;amp; Engineers Efficien
     
     <item>
       <title>PhantomJS Integration for NodeJS</title>
-      <link>http://amirraminfar.com/phantomjs-node/index/</link>
+      <link>http://amirraminfar.com/phantomjs-node/</link>
       <pubDate>Sat, 10 Dec 2016 12:06:26 -0800</pubDate>
       
-      <guid>http://amirraminfar.com/phantomjs-node/index/</guid>
+      <guid>http://amirraminfar.com/phantomjs-node/</guid>
       <description>PhantomJS for NodeJS Get Started 
 What is PhantomJS for NodeJS? PhantomJS is a headless WebKit scriptable with a JavaScript API. The native API is not accessible in NodeJS. This module allows NodeJS to interface with PhantomJS via an external process. It spawns PhantomJS processes automatically and exposes a really simple API to the NodeJS developer.
 Easy Installation. Installing PhantomJS-Node is very easy. You can install it like any other NPM module.</description>
