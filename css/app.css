@@ -12,7 +12,7 @@ body {
     background: #f4f4f4;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     color: color(black lightness(20%));
-    margin-top: 3.5em;
+    margin: 3.5em 0 0 0;
     font-size: 100%;
     line-height: 1.75em;
     font-weight: 400;
