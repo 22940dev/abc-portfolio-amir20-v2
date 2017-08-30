@@ -47,8 +47,9 @@ p {
         color: #2ebaae;
     }
 
-    p & {
+    @nest p & {
         text-transform: uppercase;
         border-bottom: 2px dotted rgba(160, 160, 160, .65);
+        transition: color 0.2s ease, border-bottom-color 0.2s ease;
     }
 }
