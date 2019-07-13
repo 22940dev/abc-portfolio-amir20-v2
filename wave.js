@@ -24,12 +24,11 @@ const shape = d3.line().curve(d3.curveBasis);
 
 let w,
   h,
-  path,
-  mousePosition = [0, 0],
+  path = [],
+  mousePosition = [100, 700],
   pathHeight;
 
 function init() {
-  var oldh = h;
   w = window.innerWidth;
   h = window.innerHeight;
   vis
@@ -38,19 +37,14 @@ function init() {
     .select("rect")
     .attr("width", w)
     .attr("height", h);
-  if (!oldh) {
-    path = [];
-    path.push([-100, h]);
-    for (var i = 0; i < points; i++) path.push([(w / points) * i, h / 4]);
-    path.push([w + 100, h]);
-    pathHeight = h / 2;
-  } else {
-    for (var i = 1; i < points + 1; i++) {
-      path[i][0] = (w / points) * i;
-      path[i][1] = (path[i][1] / oldh) * h;
-    }
-    pathHeight = (pathHeight / oldh) * h;
+  const newPath = [];
+  newPath.push([-100, h]);
+  for (var i = 0; i < points; i++) {
+    newPath.push([(w / points) * i, path[i + 1] || h / 4]);
   }
+  newPath.push([w + 100, h]);
+  pathHeight = h / 2;
+  path = newPath;
 }
 
 window.addEventListener("mousemove", function(e) {
