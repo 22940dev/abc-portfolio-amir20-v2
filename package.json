@@ -8,7 +8,7 @@
     "build": "npx parcel build index.html",
     "dev": "npx parcel index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b master"
   },
   "repository": {
     "type": "git",
