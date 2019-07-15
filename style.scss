@@ -17,6 +17,8 @@ $body-background-color: $beige-lighter;
 @import "~bulma/sass/elements/button.sass";
 @import "~bulma/sass/utilities/mixins.sass";
 
+@import "~bulma-prefers-dark/sass/utilities/_all";
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -36,17 +38,32 @@ h1.title.is-1 {
 
 #vis {
   z-index: 1;
-  opacity: 0.25;
+  opacity: 0.65;
   transform: scaleY(-1);
   position: absolute;
   top: -10px;
 }
 
-.wave {
-  fill: #4b6584;
-}
-
 #content {
   position: relative;
   z-index: 2;
+}
+
+.wave {
+  fill: #0fb9b1;
+}
+
+@include prefers-scheme(dark) {
+  @import "~bulma-prefers-dark/sass/base/_all.sass";
+  @import "~bulma-prefers-dark/sass/layout/hero.sass";
+  @import "~bulma-prefers-dark/sass/elements/title.sass";
+  @import "~bulma-prefers-dark/sass/elements/button.sass";
+
+  .wave {
+    fill: #2bcbba;
+  }
+
+  #vis {
+    opacity: 0.45;    
+  }
 }
