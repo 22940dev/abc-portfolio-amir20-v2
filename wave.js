@@ -17,50 +17,71 @@ const vis = d3
     .select("#vis")
     .append("svg")
     .attr("pointer-events", "all"),
-  points = 10;
+  points = 10,
+  mousePosition = [500, 700],
+  wavesCount = 4,
+  waves = [],
+  paths = [],
+  pathHeights = [],
+  seeds = [];
 
-const wave = vis.append("path").attr("class", "wave");
 const shape = d3.line().curve(d3.curveBasis);
 
-let w,
-  h,
-  path = [],
-  mousePosition = [100, 700],
-  pathHeight;
+for (let i = 0; i < wavesCount; i++) {
+  waves.push(
+    vis
+      .append("path")
+      .attr("class", "wave")
+      .style("opacity", (i + 1) / wavesCount - 0.1)
+  );
+  paths.push([]);
+  seeds.push(Math.random());
+}
+
+let w, h;
 
 function init() {
   w = window.innerWidth;
   h = window.innerHeight;
-  vis
-    .attr("width", w)
-    .attr("height", h)
-    .select("rect")
-    .attr("width", w)
-    .attr("height", h);
-  const newPath = [];
-  newPath.push([-100, h]);
-  for (var i = 0; i < points; i++) {
-    newPath.push([(w / points) * i, path[i + 1] || h / 4]);
+  vis.attr("width", w).attr("height", h);
+
+  for (let i = 0; i < wavesCount; i++) {
+    const path = paths[i];
+
+    path[0] = [-200 * Math.random(), h];
+    for (let j = 0; j < points; j++) {
+      path[j + 1] = [(w / points) * j, path[j + 1] || h / 4];
+    }
+    path[points + 1] = [w + Math.random() * 200, h];
+    paths[i] = path;
+    pathHeights[i] = h / 2;
   }
-  newPath.push([w + 100, h]);
-  pathHeight = h / 2;
-  path = newPath;
 }
 
 window.addEventListener("mousemove", function(e) {
-  mousePosition = [Math.min(e.clientX, 600), e.clientY];
+  mousePosition[0] = Math.min(e.clientX, 200) + 250;
+  mousePosition[1] = Math.min(e.clientY, 300) + 400;
 });
 
 d3.select(window).on("resize", init);
 
 function step(elapsed) {
-  pathHeight +=
-    (h / 2 - (mousePosition[1] / 2 + mousePosition[0] / 2) - pathHeight) / 10;
+  for (let i = 0; i < wavesCount; i++) {
+    pathHeights[i] +=
+      (h / 2 -
+        (mousePosition[1] / 3 + mousePosition[0] / 3 + 200) -
+        pathHeights[i]) /
+      10;
 
-  for (var i = 1; i < points + 1; i++) {
-    const sinSeed = elapsed / 6 + (i + (i % 10)) * 100;
+    update(elapsed, pathHeights[i], waves[i], paths[i], seeds[i]);
+  }
+}
+
+function update(elapsed, height, wave, path, seed) {
+  for (let i = 1; i < points + 1; i++) {
+    const sinSeed = elapsed / 6 + (i + (i % 10)) * 100 + seed * 500;
     path[i][1] =
-      Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * pathHeight + h / 1.1;
+      Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + h / 1.1;
   }
 
   wave.attr("d", shape(path));

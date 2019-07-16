@@ -38,10 +38,9 @@ h1.title.is-1 {
 
 #vis {
   z-index: 1;
-  opacity: 0.65;
-  transform: scaleY(-1);
+  opacity: 0.5;
   position: absolute;
-  top: -10px;
+  bottom: -10px;
 }
 
 #content {
@@ -49,7 +48,21 @@ h1.title.is-1 {
   z-index: 2;
 }
 
-.wave {
+
+
+.wave:nth-of-type(1) {
+  fill: #778ca3;
+}
+
+.wave:nth-of-type(2) {
+  fill: #fed330;
+}
+
+.wave:nth-of-type(3) {
+  fill: #45aaf2;
+}
+
+.wave:nth-of-type(4) {
   fill: #0fb9b1;
 }
 
@@ -64,6 +77,6 @@ h1.title.is-1 {
   }
 
   #vis {
-    opacity: 0.45;    
+    opacity: 0.45;
   }
 }
