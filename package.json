@@ -7,7 +7,7 @@
     "prebuild": "npx del dist",
     "build": "npx parcel build index.html",
     "dev": "npx parcel index.html",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build --no-source-maps",
     "deploy": "gh-pages -d dist -b master"
   },
   "repository": {
