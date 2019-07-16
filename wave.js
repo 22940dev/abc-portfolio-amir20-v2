@@ -32,7 +32,7 @@ for (let i = 0; i < wavesCount; i++) {
     vis
       .append("path")
       .attr("class", "wave")
-      .style("opacity", (i + 1) / wavesCount - 0.1)
+      .style("opacity", (i + 1) / wavesCount / 2)
   );
   paths.push([]);
   seeds.push(Math.random());
@@ -79,7 +79,7 @@ function step(elapsed) {
 
 function update(elapsed, height, wave, path, seed) {
   for (let i = 1; i < points + 1; i++) {
-    const sinSeed = elapsed / 6 + (i + (i % 10)) * 100 + seed * 500;
+    const sinSeed = seed * elapsed / 6 + (i + (i % 10)) * 100 + seed * 500;
     path[i][1] =
       Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + h / 1.1;
   }
