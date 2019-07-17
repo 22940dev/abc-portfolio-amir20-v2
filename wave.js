@@ -82,7 +82,7 @@ function update(elapsed, height, wave, path, seed) {
     const sinSeed = (seed * elapsed) / 6 + (i + (i % 10)) * 100 + seed * 500;
     path[i][1] =
       Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height +
-      (h - 20 -  seed * 10);
+      (h - 20 - seed * 10);
   }
 
   wave.attr("d", shape(path));
