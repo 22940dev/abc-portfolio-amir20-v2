@@ -17,7 +17,7 @@ const vis = d3
     .select("#vis")
     .append("svg")
     .attr("pointer-events", "all"),
-  points = 10,
+  points = 6,
   mousePosition = [500, 700],
   wavesCount = 4,
   waves = [],
@@ -79,9 +79,10 @@ function step(elapsed) {
 
 function update(elapsed, height, wave, path, seed) {
   for (let i = 1; i < points + 1; i++) {
-    const sinSeed = seed * elapsed / 6 + (i + (i % 10)) * 100 + seed * 500;
+    const sinSeed = (seed * elapsed) / 6 + (i + (i % 10)) * 100 + seed * 500;
     path[i][1] =
-      Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + (h / 1.04 - seed * 10);
+      Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height +
+      (h - 20 -  seed * 10);
   }
 
   wave.attr("d", shape(path));
