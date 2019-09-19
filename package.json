@@ -21,17 +21,17 @@
   },
   "homepage": "https://github.com/amir20/waves#readme",
   "dependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
     "autoprefixer": "^9.6.1",
     "bulma": "^0.7.5",
     "bulma-prefers-dark": "0.1.0-beta.0",
-    "d3": "^5.9.7",
-    "del-cli": "^2.0.0",
-    "gh-pages": "^2.0.1",
+    "d3": "^5.12.0",
+    "del-cli": "^3.0.0",
+    "gh-pages": "^2.1.1",
     "parcel-bundler": "^1.12.3",
-    "parcel-plugin-static-files-copy": "^2.1.2",
+    "parcel-plugin-static-files-copy": "^2.2.1",
     "postcss-font-magician": "^2.2.2",
-    "sass": "^1.22.4"
+    "sass": "^1.22.12"
   }
 }
