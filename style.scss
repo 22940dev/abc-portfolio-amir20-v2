@@ -56,11 +56,19 @@ body {
   fill: #0fb9b1;
 }
 
+.button.is-success {
+  color: #fff;
+}
+
 @include prefers-scheme(dark) {
   @import "~bulma-prefers-dark/sass/base/_all.sass";
   @import "~bulma-prefers-dark/sass/layout/hero.sass";
   @import "~bulma-prefers-dark/sass/elements/title.sass";
   @import "~bulma-prefers-dark/sass/elements/button.sass";
+
+  .button.is-success {
+    color: #fff;
+  }
 
   #vis {
     opacity: 0.88;
