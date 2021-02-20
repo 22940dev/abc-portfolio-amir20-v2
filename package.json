@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "predeploy": "yarn build && cp static/* dist",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d dist -b master"
   },
   "devDependencies": {
