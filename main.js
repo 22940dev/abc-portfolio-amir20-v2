@@ -1,22 +1,19 @@
-import { select, mouse, event } from "d3-selection";
+import "./style.scss";
+import { select } from "d3-selection";
 import { line, curveBasis } from "d3-shape";
 import { timer } from "d3-timer";
+
 const d3 = Object.assign(
   {},
   {
     select,
-    mouse,
-    event,
     line,
     curveBasis,
-    timer
+    timer,
   }
 );
 
-const vis = d3
-    .select("#vis")
-    .append("svg")
-    .attr("pointer-events", "all"),
+const vis = d3.select("#vis").append("svg").attr("pointer-events", "all"),
   points = 6,
   mousePosition = [500, 700],
   wavesCount = 4,
@@ -58,20 +55,16 @@ function init() {
   }
 }
 
-window.addEventListener("mousemove", function(e) {
+window.addEventListener("mousemove", function (e) {
   mousePosition[0] = Math.min(e.clientX, 200) + 250;
-  mousePosition[1] = Math.min(e.clientY, 300) + 400;
+  mousePosition[1] = Math.min(e.clientY, 300) + 600;
 });
 
 d3.select(window).on("resize", init);
 
 function step(elapsed) {
   for (let i = 0; i < wavesCount; i++) {
-    pathHeights[i] +=
-      (h / 2 -
-        (mousePosition[1] / 3 + mousePosition[0] / 3 + 200) -
-        pathHeights[i]) /
-      10;
+    pathHeights[i] += (h / 2 - (mousePosition[1] / 3 + mousePosition[0] / 3 + 200) - pathHeights[i]) / 10;
 
     update(elapsed, pathHeights[i], waves[i], paths[i], seeds[i]);
   }
@@ -79,11 +72,8 @@ function step(elapsed) {
 
 function update(elapsed, height, wave, path, seed) {
   for (let i = 1; i < points + 1; i++) {
-    const sinSeed =
-      ((seed / 2 + 0.2) * elapsed) / 6 + (i + (i % 10)) * 100 + seed * 500;
-    path[i][1] =
-      Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height +
-      (h - 20 - seed * 10);
+    const sinSeed = ((seed / 2 + 0.2) * elapsed) / 6 + (i + (i % 10)) * 100 + seed * 500;
+    path[i][1] = Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + (h - 20 - seed * 10);
   }
 
   wave.attr("d", shape(path));
