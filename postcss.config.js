@@ -4,7 +4,7 @@ const fontmagic = require("postcss-font-magician");
 module.exports = {
   plugins: [
     purgecss({
-      content: ["**/*.html"],
+      content: ["**/*.html", "**/*.vue"],
       safelist: ["wave"],
     }),
     fontmagic({
