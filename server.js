@@ -25,7 +25,6 @@ async function createServer(root = process.cwd(), isProd = process.env.NODE_ENV 
     // use vite's connect instance as middleware
     app.use(vite.middlewares);
   } else {
-    app.use(require("compression")());
     app.use(
       require("serve-static")(resolve("dist/client"), {
         index: false,

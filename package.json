@@ -1,6 +1,7 @@
 {
   "name": "amirraminfar.com",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "node server",
     "build": "yarn build:client && yarn build:server",
@@ -16,11 +17,12 @@
     "@vitejs/plugin-vue": "^1.1.4",
     "@vue/compiler-sfc": "^3.0.6",
     "@vue/server-renderer": "^3.0.6",
-    "gh-pages": "^3.1.0",
     "express": "^4.17.1",
+    "gh-pages": "^3.1.0",
     "postcss": "^8.2.6",
     "postcss-font-magician": "^3.0.0",
     "sass": "^1.32.8",
+    "serve-static": "^1.14.1",
     "vite": "^2.0.1"
   },
   "dependencies": {
