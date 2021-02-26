@@ -9,8 +9,10 @@
     "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
     "generate": "vite build --ssrManifest --outDir dist/static && yarn build:server && node prerender",
     "serve": "cross-env NODE_ENV=production node server",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist -b master"
+    "predeploy": "yarn generate",
+    "deploy": "gh-pages -d dist/static -b master",
+    "prepreview": "yarn generate",
+    "preview": "http-server dist/static"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
@@ -19,6 +21,7 @@
     "@vue/server-renderer": "^3.0.6",
     "express": "^4.17.1",
     "gh-pages": "^3.1.0",
+    "http-server": "^0.12.3",
     "postcss": "^8.2.6",
     "postcss-font-magician": "^3.0.0",
     "sass": "^1.32.8",

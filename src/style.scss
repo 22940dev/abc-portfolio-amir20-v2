@@ -28,32 +28,9 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-#vis {
-  z-index: 1;
-  opacity: 0.8;
-  position: fixed;
-  bottom: -10px;
-}
-
 #content {
   position: relative;
   z-index: 2;
-}
-
-.wave:nth-of-type(1) {
-  fill: #a55eea;
-}
-
-.wave:nth-of-type(2) {
-  fill: #fed330;
-}
-
-.wave:nth-of-type(3) {
-  fill: #45aaf2;
-}
-
-.wave:nth-of-type(4) {
-  fill: #0fb9b1;
 }
 
 .button.is-success {
@@ -79,13 +56,5 @@ a:not(.button) {
     &:hover {
       color: #fff;
     }
-  }
-
-  #vis {
-    opacity: 0.88;
-  }
-
-  .wave:nth-of-type(4) {
-    fill: #0b5f5b;
   }
 }
