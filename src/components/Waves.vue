@@ -114,7 +114,7 @@ div {
 @include prefers-scheme(dark) {
   div {
     opacity: 0.88;
-    
+
     :deep(.wave:nth-of-type(4)) {
       fill: #0b5f5b;
     }
