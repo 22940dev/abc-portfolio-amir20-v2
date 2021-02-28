@@ -8,21 +8,15 @@
       start ups.
     </p>
     <div class="mt-8 flex flex-wrap -m-2">
-      <a class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline" href="https://github.com/amir20">
+      <a class="btn bg-purple-500 hover:bg-purple-600" href="https://github.com/amir20">
         <i class="w-4 h-4 mr-2 fab fa-github"></i>
         <span>GitHub</span>
       </a>
-      <a
-        class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline"
-        href="https://www.linkedin.com/in/amirraminfar"
-      >
+      <a class="btn bg-blue-500 hover:bg-blue-600" href="https://www.linkedin.com/in/amirraminfar">
         <i class="w-4 h-4 mr-2 fab fa-linkedin"></i>
         <span>LinkedIn</span>
       </a>
-      <a
-        class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline"
-        href="https://stackoverflow.com/users/419075/amir-raminfar"
-      >
+      <a class="btn bg-green-600 hover:bg-green-700" href="https://stackoverflow.com/users/419075/amir-raminfar">
         <i class="w-4 h-4 mr-2 fab fa-stack-overflow"></i>
         <span>Stack Overflow</span>
       </a>
@@ -32,5 +26,9 @@
 <style scoped>
 h1 {
   font-family: "Playfair Display", serif;
+}
+
+.btn {
+  @apply text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline;
 }
 </style>
