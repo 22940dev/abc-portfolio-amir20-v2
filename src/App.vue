@@ -1,34 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view> </router-view>
   <Waves></Waves>
+  <div class="flex flex-col z-10 relative min-h-screen">
+    <main class="flex-1 flex items-center p-8">
+      <router-view></router-view>
+    </main>
+  </div>
 </template>
 <script setup>
 import Waves from "./components/Waves.vue";
 </script>
 <script>
-export default {
-  data() {
-    return {
-      waves: 4,
-    };
-  },
-  created() {
-    // this.$router
-  },
-  watch: {
-    $route(to, from) {
-      console.log(this.waves);
-    },
-  },
-};
+export default {};
 </script>
-<style scoped>
-nav {
-  z-index: 2;
-  position: relative;
-}
-</style>
+<style scoped></style>

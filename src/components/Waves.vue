@@ -84,16 +84,13 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-@import "bulma/sass/utilities/_all.sass";
-@import "bulma/sass/base/_all.sass";
-@import "bulma-prefers-dark/sass/utilities/_all";
-
+<style lang="postcss" scoped>
 div {
   z-index: 1;
   opacity: 0.8;
   position: fixed;
   bottom: -10px;
+
   :deep(.wave:nth-of-type(1)) {
     fill: #a55eea;
   }
@@ -111,13 +108,4 @@ div {
   }
 }
 
-@include prefers-scheme(dark) {
-  div {
-    opacity: 0.88;
-
-    :deep(.wave:nth-of-type(4)) {
-      fill: #0b5f5b;
-    }
-  }
-}
 </style>
