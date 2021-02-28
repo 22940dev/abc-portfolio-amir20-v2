@@ -7,17 +7,20 @@
       <a target="_blank" rel="noopener" href="https://www.oracle.com/industries/utilities/products/what-is-opower.html"> Opower</a>, Capital One and a few other
       start ups.
     </p>
-    <div class="mt-8 flex space-x-4">
-      <a class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-3xl inline-flex items-center no-underline" href="https://github.com/amir20">
+    <div class="mt-8 flex flex-wrap -m-2">
+      <a class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline" href="https://github.com/amir20">
         <i class="w-4 h-4 mr-2 fab fa-github"></i>
         <span>GitHub</span>
       </a>
-      <a class="bg-blue-500 hover:bg-blue-600 py-2 text-white px-4 rounded-3xl inline-flex items-center no-underline" href="https://www.linkedin.com/in/amirraminfar">
+      <a
+        class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline"
+        href="https://www.linkedin.com/in/amirraminfar"
+      >
         <i class="w-4 h-4 mr-2 fab fa-linkedin"></i>
         <span>LinkedIn</span>
       </a>
       <a
-        class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-3xl inline-flex items-center no-underline"
+        class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline"
         href="https://stackoverflow.com/users/419075/amir-raminfar"
       >
         <i class="w-4 h-4 mr-2 fab fa-stack-overflow"></i>

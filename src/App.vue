@@ -1,7 +1,7 @@
 <template>
   <Waves></Waves>
   <div class="flex flex-col z-10 relative min-h-screen">
-    <main class="flex-1 flex items-center p-8">
+    <main class="flex-1 flex items-center p-4 md:p-8">
       <router-view></router-view>
     </main>
   </div>
