@@ -1,7 +1,7 @@
 <template>
   <div class="w-auto lg:w-1/2">
     <h1 class="text-5xl mb-8">Hi there, my name is Amir.</h1>
-    <p class="font-light">
+    <p class="font-light text-lg">
       I am a software engineer, mentor and parent in San Francisco. I am currently an engineering manager at
       <a href="https://about.google" target="_blank" rel="noopener">Google</a>. Previously, I have worked at
       <a target="_blank" rel="noopener" href="https://www.oracle.com/industries/utilities/products/what-is-opower.html"> Opower</a>, Capital One and a few other
