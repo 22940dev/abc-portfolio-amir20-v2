@@ -23,7 +23,7 @@
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="postcss">
 h1 {
   font-family: "Playfair Display", serif;
 }

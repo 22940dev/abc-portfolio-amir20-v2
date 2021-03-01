@@ -1,4 +1,6 @@
-import "./style.css";
+import "./tailwind.css";
+import "./custom.css";
+
 import App from "./App.vue";
 import { createSSRApp } from "vue";
 import { createRouter } from "./router";
