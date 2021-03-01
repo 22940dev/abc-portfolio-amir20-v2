@@ -23,6 +23,14 @@
     </div>
   </div>
 </template>
+<script>
+import { multipier } from "../components/Waves.vue";
+export default {
+  mounted() {
+    multipier.value = 1;
+  },
+};
+</script>
 <style scoped lang="postcss">
 h1 {
   font-family: "Playfair Display", serif;

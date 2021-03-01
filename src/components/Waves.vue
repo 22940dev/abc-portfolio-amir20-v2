@@ -6,9 +6,11 @@
 import { select } from "d3-selection";
 import { line, curveBasis } from "d3-shape";
 import { timer } from "d3-timer";
+import { ref } from "vue";
 
 const d3 = Object.assign({}, { select, line, curveBasis, timer });
 const shape = d3.line().curve(d3.curveBasis);
+export const multipier = ref(1);
 
 export default {
   data() {
@@ -76,7 +78,7 @@ export default {
     update(elapsed, height, wave, path, seed) {
       for (let i = 1; i < this.points + 1; i++) {
         const sinSeed = ((seed / 2 + 0.2) * elapsed) / 6 + (i + (i % 10)) * 100 + seed * 500;
-        path[i][1] = Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + (this.h - 20 - seed * 10);
+        path[i][1] = multipier.value * Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + (this.h - 20 - seed * 10);
       }
 
       wave.attr("d", shape(path));
@@ -107,5 +109,4 @@ div {
     fill: #0fb9b1;
   }
 }
-
 </style>

@@ -1,4 +1,4 @@
-import "./tailwind.css";
+import "tailwindcss/tailwind.css";
 import "./custom.css";
 
 import App from "./App.vue";
