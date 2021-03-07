@@ -10,7 +10,7 @@ import { ref } from "vue";
 
 const d3 = Object.assign({}, { select, line, curveBasis, timer });
 const shape = d3.line().curve(d3.curveBasis);
-export const multipier = ref(1);
+export const multipier = ref(2);
 
 export default {
   data() {
@@ -71,14 +71,14 @@ export default {
     },
     step(elapsed) {
       for (let i = 0; i < this.wavesCount; i++) {
-        this.pathHeights[i] += (this.h / 2 - (this.mousePosition[1] / 3 + this.mousePosition[0] / 3 + 200) - this.pathHeights[i]) / 10;
+        this.pathHeights[i] += (this.h / multipier.value - (this.mousePosition[1] / 3 + this.mousePosition[0] / 3 + 200) - this.pathHeights[i]) / 10;
         this.update(elapsed, this.pathHeights[i], this.waves[i], this.paths[i], this.seeds[i]);
       }
     },
     update(elapsed, height, wave, path, seed) {
       for (let i = 1; i < this.points + 1; i++) {
         const sinSeed = ((seed / 2 + 0.2) * elapsed) / 6 + (i + (i % 10)) * 100 + seed * 500;
-        path[i][1] = multipier.value * Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + (this.h - 20 - seed * 10);
+        path[i][1] = Math.sin(sinSeed / 100) * Math.sin(sinSeed / 200) * height + (this.h - 20 - seed * 10);
       }
 
       wave.attr("d", shape(path));
