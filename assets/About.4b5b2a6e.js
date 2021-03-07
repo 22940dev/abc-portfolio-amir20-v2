@@ -1,1 +1,0 @@
-import{a as s,w as a,p as t,g as d,o,b as c}from"./vendor.38d6ccbf.js";const e={},i=a("data-v-cd94fb94");t("data-v-cd94fb94");const n={id:"content"},r=c("section",{class:"hero is-fullheight"},[c("div",{class:"hero-body"}," this is a test ")],-1);d();const f=i(((a,t)=>(o(),s("div",n,[r]))));e.render=f,e.__scopeId="data-v-cd94fb94";export default e;
