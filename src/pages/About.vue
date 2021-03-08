@@ -1,5 +1,5 @@
 <template>
-  <div class="w-auto md:w-3/5 lg:w-1/2">
+  <div class="w-auto md:w-3/4 lg:w-1/2">
     <h1 class="text-5xl mb-8">Hello there.</h1>
     <p class="font-light text-lg">
       I am a software engineer and entrepreneur. I have started two companies in my life which has shaped me in more ways that I can imagine. I enjoy using new

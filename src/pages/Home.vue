@@ -1,5 +1,5 @@
 <template>
-  <div class="w-auto md:w-3/5 lg:w-1/2">
+  <div class="w-auto md:w-3/4 lg:w-1/2">
     <h1 class="text-5xl mb-8">Hi there, my name is Amir.</h1>
     <p class="font-light text-lg">
       I am a software engineer, mentor and parent in San Francisco. I am currently an engineering manager at
@@ -33,6 +33,6 @@ export default {
 </script>
 <style scoped lang="postcss">
 .btn {
-  @apply text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline;
+  @apply text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline bg-opacity-90 hover:bg-opacity-100;
 }
 </style>
