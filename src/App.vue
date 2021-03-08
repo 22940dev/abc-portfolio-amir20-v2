@@ -24,6 +24,9 @@ export default {};
 .scale-enter-active,
 .scale-leave-active {
   transition: all 0.5s ease;
+  @media (hover: none) {
+    transition: none !important;
+  }
 }
 
 .scale-enter-from,

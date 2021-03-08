@@ -27,12 +27,12 @@
 import { multipier } from "../components/Waves.vue";
 export default {
   mounted() {
-    multipier.value = 3;
+    multipier.value = 9;
   },
 };
 </script>
 <style scoped lang="postcss">
 .btn {
-  @apply text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline bg-opacity-90 hover:bg-opacity-100;
+  @apply text-white py-2 px-4 m-2 rounded-3xl inline-flex items-center no-underline bg-opacity-90 hover:bg-opacity-100 transition-colors;
 }
 </style>
