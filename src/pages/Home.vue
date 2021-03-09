@@ -1,22 +1,22 @@
 <template>
   <div class="w-auto md:w-3/4 lg:w-1/2">
-    <h1 class="text-5xl mb-8">Hi there, my name is Amir.</h1>
-    <p class="font-light text-lg">
+    <h1 class="mb-8 text-5xl">Hi there, my name is Amir.</h1>
+    <p class="text-lg font-light">
       I am a software engineer, mentor and parent in San Francisco. I am currently an engineering manager at
       <a href="https://about.google" target="_blank" rel="noopener">Google</a>. Previously, I have worked at
       <a target="_blank" rel="noopener" href="https://www.oracle.com/industries/utilities/products/what-is-opower.html"> Opower</a>, Capital One and a few other
       start ups.
     </p>
-    <div class="mt-8 flex flex-wrap -m-2">
-      <a class="btn bg-purple-500 hover:bg-purple-600" href="https://github.com/amir20">
+    <div class="flex flex-wrap mt-8 -m-2">
+      <a class="bg-purple-500 btn hover:bg-purple-600" href="https://github.com/amir20">
         <i class="w-4 h-4 mr-2 fab fa-github"></i>
         <span>GitHub</span>
       </a>
-      <a class="btn bg-blue-500 hover:bg-blue-600" href="https://www.linkedin.com/in/amirraminfar">
+      <a class="bg-blue-500 btn hover:bg-blue-600" href="https://www.linkedin.com/in/amirraminfar">
         <i class="w-4 h-4 mr-2 fab fa-linkedin"></i>
         <span>LinkedIn</span>
       </a>
-      <a class="btn bg-green-600 hover:bg-green-700" href="https://stackoverflow.com/users/419075/amir-raminfar">
+      <a class="bg-green-600 btn hover:bg-green-700" href="https://stackoverflow.com/users/419075/amir-raminfar">
         <i class="w-4 h-4 mr-2 fab fa-stack-overflow"></i>
         <span>Stack Overflow</span>
       </a>

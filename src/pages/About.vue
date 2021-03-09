@@ -1,7 +1,7 @@
 <template>
   <div class="w-auto md:w-3/4 lg:w-1/2">
-    <h1 class="text-5xl mb-8">Hello there.</h1>
-    <p class="font-light text-lg">
+    <h1 class="mb-8 text-5xl">Hello there.</h1>
+    <p class="text-lg font-light">
       I am a software engineer and entrepreneur. I have started two companies in my life which has shaped me in more ways that I can imagine. I enjoy using new
       technology and learning about new patterns. I mostly specialize in web technologies but also focus on ML, big data and real-time architecture. You can
       find some of my projects on Github.

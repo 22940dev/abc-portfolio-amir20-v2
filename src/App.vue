@@ -1,11 +1,11 @@
 <template>
   <Waves></Waves>
-  <div class="flex flex-col z-10 relative min-h-screen">
-    <nav class="flex justify-end space-x-2 m-4">
+  <div class="relative z-10 flex flex-col min-h-screen">
+    <nav class="flex justify-end m-4 space-x-2">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
     </nav>
-    <main class="flex-1 flex items-center p-4 md:p-8">
+    <main class="flex items-center flex-1 p-4 md:p-8">
       <router-view v-slot="{ Component }">
         <transition name="scale" mode="out-in">
           <component :is="Component" />
