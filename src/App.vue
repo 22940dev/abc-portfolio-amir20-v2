@@ -3,7 +3,7 @@
   <div class="relative z-10 flex flex-col min-h-screen">
     <nav class="flex justify-end m-4 space-x-2">
       <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About Me</router-link>
     </nav>
     <main class="flex items-center flex-1 p-4 md:p-8">
       <router-view v-slot="{ Component }">
