@@ -5,7 +5,7 @@
       <ul class="space-y-8">
         <li class="md:flex" v-for="project in projects" :key="project.title">
           <div class="md:flex-shrink-0">
-            <img :src="project.image" :alt="project.imageAlt" width="320" height="165" class="object-cover w-full rounded h-50 md:w-60" />
+            <img :src="project.image" :alt="project.imageAlt" width="320" height="165" class="object-cover w-full rounded shadow h-50 md:w-60" />
           </div>
           <div class="mt-8 md:mt-0 md:ml-8">
             <a class="mt-1 text-lg font-medium leading-tight" :href="project.link">{{ project.title }}</a>
