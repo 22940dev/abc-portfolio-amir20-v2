@@ -8,7 +8,7 @@
     </p>
     <br />
 
-    <p>
+    <p class="text-lg font-light">
       I was born in Iran and moved to Seattle at a young age. I started programming in high school and studied computer science at the George Washington
       University in Washington DC. After graduating, I worked at AOL on aol.com which taught me a lot about scalability. I left to join Opower in Arlington, VA.
       Opower started my career in management. I left to start my own in Los Angeles and eventually moved to San Francisco where I joined Opower for their IPO in
@@ -16,7 +16,7 @@
     </p>
     <br />
 
-    <p>
+    <p class="text-lg font-light">
       I currently live in the South Bay and work at Google building their internal CRM. I am a husband and father of one. I enjoy playing with my daughter,
       listening to music, reading books, cycling and weight training.
     </p>
