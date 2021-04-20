@@ -1,6 +1,6 @@
 module.exports = {
   plugins: {
-    "@tailwindcss/jit": {},
+    "tailwindcss": {},
     "postcss-nested": {},
     "postcss-font-magician": { display: "swap" },
     autoprefixer: {},
