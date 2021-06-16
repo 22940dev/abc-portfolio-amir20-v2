@@ -15,9 +15,9 @@ const routesToPrerender = fs.readdirSync(toAbsolute("src/pages")).map((file) => 
 (async () => {
   // pre-render each route...
   for (const url of routesToPrerender) {
-    const [appHtml, preloadLinks] = await render(url, manifest);
+    const [appHtml, preloadLinks, headTags] = await render(url, manifest);
 
-    const html = template.replace(`<!--preload-links-->`, preloadLinks).replace(`<!--app-html-->`, appHtml);
+    const html = template.replace(`<!--preload-links-->`, preloadLinks).replace(`<!--app-html-->`, appHtml).replace(`<!--head-html-->`, headTags);
 
     const filePath = `dist/static${url === "/" ? "/index" : url}.html`;
     fs.writeFileSync(toAbsolute(filePath), html);

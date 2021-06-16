@@ -18,6 +18,7 @@
 </template>
 <script>
 import { multipier } from "../components/Waves.vue";
+import { useHead } from "@vueuse/head";
 
 const images = import.meta.globEager("/src/images/*.png");
 
@@ -53,6 +54,11 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    useHead({
+      title: "Projects | AmirRaminfar.me",
+    });
   },
   mounted() {
     multipier.value = 1.5;

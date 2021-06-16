@@ -24,7 +24,13 @@
 </template>
 <script>
 import { multipier } from "../components/Waves.vue";
+import { useHead } from "@vueuse/head";
 export default {
+  created() {
+    useHead({
+      title: "About | AmirRaminfar.me",
+    });
+  },
   mounted() {
     multipier.value = 2;
   },
