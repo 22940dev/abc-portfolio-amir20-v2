@@ -10,7 +10,7 @@
     "generate": "vite build --ssrManifest --outDir dist/static && yarn build:server && node prerender",
     "serve": "cross-env NODE_ENV=production node server",
     "predeploy": "yarn generate",
-    "deploy": "gh-pages -d dist/static -b master",
+    "deploy": "gh-pages -d dist/static -b source",
     "prepreview": "yarn generate",
     "preview": "http-server dist/static"
   },
