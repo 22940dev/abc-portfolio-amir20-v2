@@ -8,17 +8,17 @@
       start ups.
     </p>
     <div class="flex flex-wrap mt-8 -m-2">
-      <a class="bg-purple-500 btn hover:bg-purple-600" href="https://github.com/amir20">
+      <a class="bg-purple-500 btn hover:bg-purple-600" href="https://github.com/22940dev">
         <i class="w-4 h-4 mr-2 fab fa-github"></i>
         <span>GitHub</span>
       </a>
-      <a class="bg-blue-500 btn hover:bg-blue-600" href="https://www.linkedin.com/in/amirraminfar">
+      <a class="bg-blue-500 btn hover:bg-blue-600" href="https://www.linkedin.com/in/doc22940">
         <i class="w-4 h-4 mr-2 fab fa-linkedin"></i>
         <span>LinkedIn</span>
       </a>
-      <a class="bg-green-600 btn hover:bg-green-700" href="https://stackoverflow.com/users/419075/amir-raminfar">
+      <a class="bg-green-600 btn hover:bg-green-700" href="https://twitter.com/users/alec">
         <i class="w-4 h-4 mr-2 fab fa-stack-overflow"></i>
-        <span>Stack Overflow</span>
+        <span>Twitter</span>
       </a>
     </div>
   </div>
