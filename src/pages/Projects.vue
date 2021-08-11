@@ -35,28 +35,19 @@ export default {
           from characters, plots, movie posters and short trailers for you to watch.  The search also allows for the user to rate each movie on a 1-5 scale.`,
         },
         {
-          title: "Dozzle for Docker",
-          link: "https://dozzle.dev/",
-          image: images["/src/images/dozzle.png"].default,
+          title: "Quotify",
+          link: "https://quote-quotes.vercel.app/",
+          image: images["/src/images/quotify.png"].default,
           imageAlt: "Dozzle screenshot",
-          description: `Dozzle is a simple, lightweight application that provides you with a web based interface to monitor your
-              <a href="https://www.docker.com/">Docker</a> container logs live. It doesn’t store log information, it is for live monitoring of your container
-              logs only.`,
-        },
-        {
-          title: "PhantomJS integration for NodeJS",
-          link: "https://github.com/amir20/phantomjs-node",
-          image: images["/src/images/phantom.png"].default,
-          imageAlt: "Phantom screenshot",
-          description: `Phantom is a module for integrating <a href="https://phantomjs.org/">PhantomJs</a> with Node. This project is no longer maintained because
-              PhantomJs has been deprecated.`,
+          description: `Quotify is one of the best quotes webapps out there.  It has a database of over 4,000 quotes, sorted into catagories and authors.  It also has
+          a great search function on the homepage.`,
         },
       ],
     };
   },
   created() {
     useHead({
-      title: "Projects | AmirRaminfar.me",
+      title: "Projects | 22940dev",
     });
   },
   mounted() {
