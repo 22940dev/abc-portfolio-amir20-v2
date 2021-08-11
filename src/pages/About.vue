@@ -1,19 +1,19 @@
 <template>
   <div class="w-auto md:w-3/4 lg:w-1/2">
-    <h1 class="mb-8 text-5xl">Hello there.</h1>
-    <p class="text-lg font-light">
-      I am a software engineer and entrepreneur. 
+    <h1 class="mb-8 text-5xl text-blue-700">Hello there.</h1>
+    <p class="text-lg font-light text-blue-500">
+      I am a jack of all trades. <br /> Master of few.
     </p>
     <br />
 
     <p class="text-lg font-light">
-      I was born in Iran and moved to Seattle at a young age. 
+      I was born in Virginia and attended University of Virginia.
     </p>
     <br />
 
     <p class="text-lg font-light">
-      I currently live in the South Bay and work at Google building their internal CRM. I am a husband and father of one. I enjoy playing with my daughter,
-      listening to music, reading books, cycling and weight training.
+      After college I spent time in the sports memorabilia authentication industry, before several years in landscape architecture and house flipping. 
+      The past several years I have been learning various programming languages, while completeing various projects for happy customers.
     </p>
   </div>
 </template>
@@ -23,7 +23,7 @@ import { useHead } from "@vueuse/head";
 export default {
   created() {
     useHead({
-      title: "About | AmirRaminfar.me",
+      title: "About | 22940dev",
     });
   },
   mounted() {
