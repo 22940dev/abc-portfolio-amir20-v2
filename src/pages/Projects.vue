@@ -27,13 +27,12 @@ export default {
     return {
       projects: [
         {
-          title: "Clashleaders.com",
-          link: "https://www.clashleaders.com/",
-          image: images["/src/images/clashleaders.png"].default,
-          imageAlt: "Clashleaders screenshot",
-          description: `Clashleaders is a website dedicated to <a href="https://supercell.com/en/games/clashofclans/">Clash of Clans</a> game. This website shows trending
-              leaderboards across the world for 6 million players. Each clan has insights that are ranked against all other clans. Data is visualized using
-              beautiful charts and graphs.`,
+          title: "MovieJs",
+          link: "https://moviejs-search.vercel.app/",
+          image: images["/src/images/moviejs.png"].default,
+          imageAlt: "MovieJs screenshot",
+          description: `MovieJs is a VueJs powered movie and entertainment search engine for people in a hurry.  It uses the OMDB Api for all the movie information
+          from characters, plots, movie posters and short trailers for you to watch.  The search also allows for the user to rate each movie on a 1-5 scale.`,
         },
         {
           title: "Dozzle for Docker",
